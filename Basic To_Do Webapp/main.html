@@ -17,7 +17,7 @@
 
         .todo-container {
             width: 500px;
-            background-color: #ffc0cb; /* Pink background */
+            background-color: #ffc0cb; 
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -177,13 +177,9 @@
                 const deleteButton = document.createElement('button');
                 deleteButton.textContent = 'Delete';
                 deleteButton.className = 'delete-btn';
-                deleteButton.addEventListener('click', function() {
-                    taskItem.remove();
-                });
+                deleteButton.addEventListener('click', function() {taskItem.remove();});
                 buttonsContainer.appendChild(deleteButton);
-
                 taskItem.appendChild(buttonsContainer);
-
                 pendingList.appendChild(taskItem);
                 taskInput.value = ''; 
             });
