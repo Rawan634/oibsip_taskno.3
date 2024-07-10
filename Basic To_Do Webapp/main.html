@@ -133,7 +133,7 @@
                 event.preventDefault();
                 const taskInput = document.getElementById('new-task');
                 const taskText = taskInput.value.trim();
-                if (taskText === '') return; // Empty task check
+                if (taskText === '') return; 
 
                 const taskItem = document.createElement('li');
                 taskItem.className = 'task-item';
@@ -185,7 +185,7 @@
                 taskItem.appendChild(buttonsContainer);
 
                 pendingList.appendChild(taskItem);
-                taskInput.value = ''; // Clear input after adding task
+                taskInput.value = ''; 
             });
 
             function getCurrentDateTime() {
